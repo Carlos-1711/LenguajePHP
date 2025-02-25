@@ -2,13 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #4F5D95, #232531);
+    color: white;
     text-align: center;
 }
 header {
-    background: #222;
-    color: white;
+    background: rgba(0, 0, 0, 0);
+    text-transform: uppercase;
     padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 h1, h2 {
     margin: 0;
@@ -18,18 +20,20 @@ h1, h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .contenido img {
-    max-width: 200px;
+    max-width: 250px;
     margin-right: 20px;
 }
 .descripcion {
     max-width: 600px;
+    font-size: 18px;
 }
 .botones {
     display: flex;
@@ -37,18 +41,24 @@ h1, h2 {
     gap: 15px;
     padding: 20px;
 }
-.botones button {
-    background: #222;
+.boton {
+    text-decoration: none;
+    background: #6c7aab;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.botones button:hover {
-    background: #555;
+
+.boton:hover {
+    background: #4F5D95;
+    transform: scale(1.1);
 }
+
+/* Responsive para móviles */
 @media (max-width: 600px) {
     .contenido {
         flex-direction: column;
