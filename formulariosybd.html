@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de Formularios y Bases de Datos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Manejo de Formularios y Bases de Datos</h1>
+    </header>
+
+    <section class="introduccion">
+        <p>Uno de los usos más comunes de PHP es el procesamiento de formularios y la interacción con bases de datos.</p>
+    </section>
+
+    <section class="contenido">
+        <div class="codigo">
+            <h3>Captura de Datos de un Formulario</h3>
+            <pre>
+&lt;form method="POST" action="procesar.php"&gt;
+    Nombre: &lt;input type="text" name="nombre"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <div class="codigo">
+            <h3>Procesamiento en PHP</h3>
+            <pre>
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nombre = $_POST["nombre"];
+    echo "Hola, " . htmlspecialchars($nombre);
+}
+?&gt;
+            </pre>
+        </div>
+    </section>
+
+    <section class="video">
+        <h2>📺 Video Explicativo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hR9RwZ8yUVY" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <div class="boton-regreso">
+        <a href="index.html" class="btn">Volver a la Página Principal</a>
+    </div>
+</body>
+</html>

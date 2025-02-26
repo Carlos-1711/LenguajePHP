@@ -208,3 +208,110 @@ header {
 .btn:hover {
     background: #354A72;
 }
+/*Estilo para sintaxis*/
+.introduccion {
+    text-align: center;
+    padding: 20px;
+}
+
+.bloque {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    background: #1e1e1e;
+    color: #f8f8f8;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    text-align: left;
+}
+
+.boton-regreso {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+/*Estilo para formulariosbd*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.hero {
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.introduccion {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    font-size: 18px;
+}
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #4c4783;
+}
+.codigo {
+    background: #2e2e2e;
+    color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px;
+    font-family: "Courier New", monospace;
+}
+
+pre {
+    overflow-x: auto;
+}
+.boton-regreso {
+    text-align: center;
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+.video {
+    text-align: center;
+    padding: 20px;
+}
