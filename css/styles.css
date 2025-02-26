@@ -57,8 +57,6 @@ h1, h2 {
     background: #4F5D95;
     transform: scale(1.1);
 }
-
-/* Responsive para móviles */
 @media (max-width: 600px) {
     .contenido {
         flex-direction: column;
@@ -70,4 +68,143 @@ h1, h2 {
     .botones {
         flex-direction: column;
     }
+}
+/*Agregando estilo para caracteristicas*/
+.caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.caracteristica {
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.caracteristica img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.caracteristica h3 {
+    color: #f7d794;
+    margin-bottom: 10px;
+}
+
+.caracteristica p {
+    font-size: 14px;
+}
+
+.caracteristica:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 800px) {
+    .caracteristicas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.boton-regreso {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #4F5D95;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #354A72;
+}
+/*Agregando estilo para la instalacion*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4F5D95;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.introduccion {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.entornos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.entorno {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.entorno img {
+    width: 80px;
+    height: auto;
+}
+
+.video {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.boton-regreso {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #4F5D95;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #354A72;
 }
